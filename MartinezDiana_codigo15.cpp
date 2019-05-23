@@ -3,7 +3,7 @@
 using namespace std;
 double m=7294.29,q=2.0;
 double F(double dt, int iteraciones,bool x){
-    if(iteraciones*dt<3 || iteraciones*dt> 7 || x)
+    if(iteraciones*dt<3 || iteraciones*dt> 7)
         return 0;
     return q*3;
 }
