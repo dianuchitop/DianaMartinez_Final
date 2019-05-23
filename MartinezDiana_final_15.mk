@@ -4,5 +4,5 @@ plot.png: Data.dat graph.py
 %.dat : a.out
 	./a.out 
 
-a.out: codigo.cpp
-	g++ codigo.cpp
+a.out: MartinezDiana_codigo15.cpp
+	g++ MartinezDiana_codigo15.cpp
