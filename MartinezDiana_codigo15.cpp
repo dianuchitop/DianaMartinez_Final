@@ -12,8 +12,8 @@ double aceleracion(double dt, int iteraciones,bool x){
 }
 int main(){
     freopen("datos.dat","w",stdout);
-    bool dt=0.1;
-    bool t=0.0;
+    double dt=0.1;
+    double t=0.0;
     int iteraciones=100;
     double x[iteraciones+1][2];
     double v[iteraciones+1][2];
@@ -27,10 +27,8 @@ int main(){
         x[i][1]=x[i-1][1]+v[i-1][1]*dt+(0.5*aceleracion(dt,i-1,false)*dt*dt);
         v[i][0]=v[i-1][0]+dt*0.5*(aceleracion(dt,i-1,true)+aceleracion(dt,i,true));
         v[i][1]=v[i-1][1]+dt*0.5*(aceleracion(dt,i-1,false)+aceleracion(dt,i,false));
-        cout<<t<<" "<<x[i][0]<<" "<<x[i][1]<<endl;
+        cout<<dt*i<<" "<<x[i][0]<<" "<<x[i][1]<<endl;
     }
 	return 0;
 
 }
-
-
