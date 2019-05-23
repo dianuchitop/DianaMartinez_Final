@@ -1,5 +1,5 @@
-ode main.cpp:
-    g++ main.cpp
+ode MartinezDiana_codigoc15.cpp:
+    g++ MartinezDiana_codigoc15.cpp
     ./a.out
-graficas: graficas.py ode
-    python3 graficas.py
+graficas: MartinezDiana_codigopython15.py ode
+    python3 artinezDiana_codigopython15.py
